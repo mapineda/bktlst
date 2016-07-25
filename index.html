@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Bucketli.st</title>
+    <!-- meta tag for mobile -->
+
+  </head>
+  <body ng-app'bucketList' ng-controller='MainCtrl'>
+    <div ng-repeat="post in posts | orderBy: '-upvotes'">
+      {{post.title}} - upvotes: {{post.upvotes}}
+    </div>
+
+  </body>
+  <!-- angular min script  -->
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
+  <!-- app.js script -->
+  <script src='app.js'></script>
+</html>
